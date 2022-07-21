@@ -11,11 +11,7 @@ struct AdDetails: View {
     @Binding var ad: Ad?
     
     var body: some View {
-        if ad != nil {
-            return Text("\(ad!.id.uuidString)")
-        }
-        
-        return Text("Seleziona un'inserzione")
+        Text("\(ad!.id.uuidString)")
     }
 }
 
