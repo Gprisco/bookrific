@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		941337DE288855AB00AB3F2E /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941337DD288855AB00AB3F2E /* MKCoordinateRegion.swift */; };
+		941337E22889534E00AB3F2E /* AdDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941337E12889534E00AB3F2E /* AdDetails.swift */; };
 		942194CF2887137E0001A857 /* BookrificApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942194CE2887137E0001A857 /* BookrificApp.swift */; };
 		942194D12887137E0001A857 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942194D02887137E0001A857 /* ContentView.swift */; };
 		942194D3288713810001A857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942194D2288713810001A857 /* Assets.xcassets */; };
 		942194D6288713810001A857 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942194D5288713810001A857 /* Preview Assets.xcassets */; };
+		942194DD288716EF0001A857 /* BookMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942194DC288716EF0001A857 /* BookMap.swift */; };
+		942194E1288729C40001A857 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942194E0288729C40001A857 /* LocationManager.swift */; };
+		942194E4288730740001A857 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942194E3288730740001A857 /* Ad.swift */; };
+		942194E6288731630001A857 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942194E5288731630001A857 /* AdManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		941337DD288855AB00AB3F2E /* MKCoordinateRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateRegion.swift; sourceTree = "<group>"; };
+		941337E12889534E00AB3F2E /* AdDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetails.swift; sourceTree = "<group>"; };
 		942194CB2887137E0001A857 /* Bookrific.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookrific.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		942194CE2887137E0001A857 /* BookrificApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookrificApp.swift; sourceTree = "<group>"; };
 		942194D02887137E0001A857 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		942194D2288713810001A857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		942194D5288713810001A857 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		942194DC288716EF0001A857 /* BookMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMap.swift; sourceTree = "<group>"; };
+		942194E0288729C40001A857 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		942194E3288730740001A857 /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		942194E5288731630001A857 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,14 @@
 		942194CD2887137E0001A857 /* Bookrific */ = {
 			isa = PBXGroup;
 			children = (
+				942194E7288855250001A857 /* Extensions */,
 				942194CE2887137E0001A857 /* BookrificApp.swift */,
 				942194D02887137E0001A857 /* ContentView.swift */,
+				942194DC288716EF0001A857 /* BookMap.swift */,
+				941337E12889534E00AB3F2E /* AdDetails.swift */,
+				942194E0288729C40001A857 /* LocationManager.swift */,
+				942194E3288730740001A857 /* Ad.swift */,
+				942194E5288731630001A857 /* AdManager.swift */,
 				942194D2288713810001A857 /* Assets.xcassets */,
 				942194D4288713810001A857 /* Preview Content */,
 			);
@@ -65,6 +83,14 @@
 				942194D5288713810001A857 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		942194E7288855250001A857 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				941337DD288855AB00AB3F2E /* MKCoordinateRegion.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				941337DE288855AB00AB3F2E /* MKCoordinateRegion.swift in Sources */,
+				942194E6288731630001A857 /* AdManager.swift in Sources */,
+				942194E1288729C40001A857 /* LocationManager.swift in Sources */,
 				942194D12887137E0001A857 /* ContentView.swift in Sources */,
+				942194E4288730740001A857 /* Ad.swift in Sources */,
+				941337E22889534E00AB3F2E /* AdDetails.swift in Sources */,
 				942194CF2887137E0001A857 /* BookrificApp.swift in Sources */,
+				942194DD288716EF0001A857 /* BookMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,11 +299,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bookrific/Preview Content\"";
+				DEVELOPMENT_TEAM = 6GCHYY4YGP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bookrific/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Consentire l'accesso alla posizione?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -295,11 +331,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bookrific/Preview Content\"";
+				DEVELOPMENT_TEAM = 6GCHYY4YGP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bookrific/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Consentire l'accesso alla posizione?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
