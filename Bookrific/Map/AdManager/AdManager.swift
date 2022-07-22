@@ -38,7 +38,7 @@ class AdManager {
                 break;
             }
             
-            ads.append(contentsOf: [Ad(lat: region.center.latitude + Double(latDelta), long: region.center.longitude + Double(longDelta), author: "Ray Wenderlich", title: "Real-World iOS by Tutorials", description: "Very nice book")])
+            ads.append(contentsOf: [Ad(lat: region.center.latitude + Double(latDelta), long: region.center.longitude + Double(longDelta), author: "Ray Wenderlich", title: "Real-World iOS by Tutorials", description: "Very nice book", user: DB.users[i%DB.users.count])])
         }
         
         return ads

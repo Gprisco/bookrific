@@ -17,6 +17,6 @@ struct AdDetails: View {
 
 struct AdDetails_Previews: PreviewProvider {
     static var previews: some View {
-        AdDetails(ad: Binding(get: { Ad(lat: 43.0, long: 11.0, author: "Philip Knight", title: "L'arte della Vittoria", description: "Libro meraviglioso") }, set: {_ in}))
+        AdDetails(ad: Binding(get: { Ad(lat: 43.0, long: 11.0, author: "Philip Knight", title: "L'arte della Vittoria", description: "Libro meraviglioso", user: UserProfile(id: 1, name: "John", surname: "Doe")) }, set: {_ in}))
     }
 }

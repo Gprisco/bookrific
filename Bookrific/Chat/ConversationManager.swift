@@ -8,16 +8,15 @@
 import UIKit
 
 public class ConversationManager {
-    public static func getConversations() -> ConversationList {
-        let users = [
-            UserProfile(id: 1, name: "Giovanni", surname: "Prisco"),
-            UserProfile(id: 2, name: "Simona", surname: "Ventura"),
-            UserProfile(id: 3, name: "Bryan", surname: "Adams"),
-            UserProfile(id: 4, name: "Chandler", surname: "Bing"),
-        ]
+    public var conversations: [Conversation]
+    
+    public static let shared = ConversationManager()
+    
+    public init() {
+        conversations = [Conversation]()
         
-        var conversations = [Conversation]()
-        
+        let users = DB.users
+                
         for user in users {
             let messages = [
                 Message(id: 1, from: nil, message: "Ciao"),
@@ -31,7 +30,9 @@ public class ConversationManager {
             
             conversations.append(Conversation(id: user.id, recipient: user, messages: messages))
         }
-        
+    }
+    
+    public func getConversations() -> ConversationList {
         return ConversationList(conversations: conversations)
     }    
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ChatListView: View {
-    @ObservedObject var conversations = ConversationManager.getConversations()
+    @ObservedObject var conversations = ConversationManager.shared.getConversations()
     
     var body: some View {
         List($conversations.conversations) { $chat in
