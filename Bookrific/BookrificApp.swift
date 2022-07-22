@@ -12,6 +12,7 @@ struct BookrificApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .navigationViewStyle(.stack)
         }
     }
 }

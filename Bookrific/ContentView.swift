@@ -7,46 +7,42 @@
 
 import SwiftUI
 
-enum PAGES: Int {
+public enum PAGES: Int {
     case MAP = 0
     case CHAT = 1
 }
 
 struct ContentView: View {
     @State private var selectedPage = 0
-
+    
     var body: some View {
-        TabView {
-            TabView(selection: $selectedPage) {
-                ZStack(alignment: .topTrailing) {
-                    BookMap()
-                    Button(action:  { withAnimation { selectedPage = PAGES.CHAT.rawValue } }) {
-                        Image(systemName: "message")
-                            .frame(width: 45, height: 45, alignment: .center)
-                            .background(.white)
-                            .clipShape(Circle())
+        NavigationView {
+            TabView {
+                TabView(selection: $selectedPage) {
+                    BookMapView(selectedPage: $selectedPage)
+                        .navigationTitle("Scopri")
+                        .navigationBarTitleDisplayMode(.inline)
+                        .tag(0)
+                    
+                    ChatListView()
+                        .navigationTitle("Chat")
+                        .tag(1)
+                }
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+                .tabItem {
+                    Label("Scopri", systemImage: "map")
+                }
+                
+                Text("Inserisci Inserzione!")
+                    .tabItem {
+                        Label("Inserisci", systemImage: "plus.circle")
                     }
-                    .padding(EdgeInsets(top: 15, leading: 0, bottom: 0, trailing: 15))
-                }
-                .tag(0)
-                Text("Chat")
-                    .tag(1)
+                
+                Text("Profilo!")
+                    .tabItem {
+                        Label("Profilo", systemImage: "person")
+                    }
             }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-            .tabItem {
-                Label("Scopri", systemImage: "map")
-            }
-            
-            Text("Inserisci Inserzione!")
-                .tabItem {
-                    Label("Inserisci", systemImage: "plus.circle")
-                }
-            
-            Text("Profilo!")
-                .tabItem {
-                    Label("Profilo", systemImage: "person")
-                }
-            
         }
     }
 }

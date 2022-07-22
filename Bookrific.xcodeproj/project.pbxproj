@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		941337DE288855AB00AB3F2E /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941337DD288855AB00AB3F2E /* MKCoordinateRegion.swift */; };
 		941337E22889534E00AB3F2E /* AdDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941337E12889534E00AB3F2E /* AdDetails.swift */; };
+		941337E928898D9C00AB3F2E /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941337E828898D9C00AB3F2E /* ChatListView.swift */; };
+		941337ED28898E9C00AB3F2E /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941337EC28898E9C00AB3F2E /* UserProfile.swift */; };
+		941337EF28898EE100AB3F2E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941337EE28898EE100AB3F2E /* Message.swift */; };
+		941337F128898F6E00AB3F2E /* ConversationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941337F028898F6E00AB3F2E /* ConversationManager.swift */; };
 		942194CF2887137E0001A857 /* BookrificApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942194CE2887137E0001A857 /* BookrificApp.swift */; };
 		942194D12887137E0001A857 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942194D02887137E0001A857 /* ContentView.swift */; };
 		942194D3288713810001A857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942194D2288713810001A857 /* Assets.xcassets */; };
@@ -17,11 +21,21 @@
 		942194E1288729C40001A857 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942194E0288729C40001A857 /* LocationManager.swift */; };
 		942194E4288730740001A857 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942194E3288730740001A857 /* Ad.swift */; };
 		942194E6288731630001A857 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942194E5288731630001A857 /* AdManager.swift */; };
+		94AC1CDC288AB5C20040715F /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC1CDB288AB5C20040715F /* Conversation.swift */; };
+		94B6DC51288ABC0100010026 /* BookMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6DC50288ABC0100010026 /* BookMapView.swift */; };
+		94B6DC53288AC0A600010026 /* MessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6DC52288AC0A600010026 /* MessageContentView.swift */; };
+		94B6DC55288AC0FF00010026 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6DC54288AC0FF00010026 /* MessageView.swift */; };
+		94B6DC57288AC2AB00010026 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6DC56288AC2AB00010026 /* ChatView.swift */; };
+		94B6DC5A288ADCE900010026 /* ConversationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6DC59288ADCE900010026 /* ConversationList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		941337DD288855AB00AB3F2E /* MKCoordinateRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateRegion.swift; sourceTree = "<group>"; };
 		941337E12889534E00AB3F2E /* AdDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetails.swift; sourceTree = "<group>"; };
+		941337E828898D9C00AB3F2E /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		941337EC28898E9C00AB3F2E /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		941337EE28898EE100AB3F2E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		941337F028898F6E00AB3F2E /* ConversationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationManager.swift; sourceTree = "<group>"; };
 		942194CB2887137E0001A857 /* Bookrific.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookrific.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		942194CE2887137E0001A857 /* BookrificApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookrificApp.swift; sourceTree = "<group>"; };
 		942194D02887137E0001A857 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +45,12 @@
 		942194E0288729C40001A857 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		942194E3288730740001A857 /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
 		942194E5288731630001A857 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		94AC1CDB288AB5C20040715F /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		94B6DC50288ABC0100010026 /* BookMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMapView.swift; sourceTree = "<group>"; };
+		94B6DC52288AC0A600010026 /* MessageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageContentView.swift; sourceTree = "<group>"; };
+		94B6DC54288AC0FF00010026 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		94B6DC56288AC2AB00010026 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		94B6DC59288ADCE900010026 /* ConversationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +64,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		941337E32889757800AB3F2E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				941337E42889759800AB3F2E /* LocationManager */,
+				941337E628898D7A00AB3F2E /* AdManager */,
+				942194DC288716EF0001A857 /* BookMap.swift */,
+				941337E12889534E00AB3F2E /* AdDetails.swift */,
+				94B6DC50288ABC0100010026 /* BookMapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		941337E42889759800AB3F2E /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				942194E0288729C40001A857 /* LocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		941337E628898D7A00AB3F2E /* AdManager */ = {
+			isa = PBXGroup;
+			children = (
+				942194E3288730740001A857 /* Ad.swift */,
+				942194E5288731630001A857 /* AdManager.swift */,
+			);
+			path = AdManager;
+			sourceTree = "<group>";
+		};
+		941337E728898D9000AB3F2E /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				94B6DC58288ADBA200010026 /* Models */,
+				941337E828898D9C00AB3F2E /* ChatListView.swift */,
+				941337F028898F6E00AB3F2E /* ConversationManager.swift */,
+				94B6DC52288AC0A600010026 /* MessageContentView.swift */,
+				94B6DC54288AC0FF00010026 /* MessageView.swift */,
+				94B6DC56288AC2AB00010026 /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		942194C22887137E0001A857 = {
 			isa = PBXGroup;
 			children = (
@@ -63,14 +125,11 @@
 		942194CD2887137E0001A857 /* Bookrific */ = {
 			isa = PBXGroup;
 			children = (
+				941337E728898D9000AB3F2E /* Chat */,
 				942194E7288855250001A857 /* Extensions */,
 				942194CE2887137E0001A857 /* BookrificApp.swift */,
 				942194D02887137E0001A857 /* ContentView.swift */,
-				942194DC288716EF0001A857 /* BookMap.swift */,
-				941337E12889534E00AB3F2E /* AdDetails.swift */,
-				942194E0288729C40001A857 /* LocationManager.swift */,
-				942194E3288730740001A857 /* Ad.swift */,
-				942194E5288731630001A857 /* AdManager.swift */,
+				941337E32889757800AB3F2E /* Map */,
 				942194D2288713810001A857 /* Assets.xcassets */,
 				942194D4288713810001A857 /* Preview Content */,
 			);
@@ -91,6 +150,17 @@
 				941337DD288855AB00AB3F2E /* MKCoordinateRegion.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		94B6DC58288ADBA200010026 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				941337EC28898E9C00AB3F2E /* UserProfile.swift */,
+				941337EE28898EE100AB3F2E /* Message.swift */,
+				94AC1CDB288AB5C20040715F /* Conversation.swift */,
+				94B6DC59288ADCE900010026 /* ConversationList.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +237,20 @@
 				942194E6288731630001A857 /* AdManager.swift in Sources */,
 				942194E1288729C40001A857 /* LocationManager.swift in Sources */,
 				942194D12887137E0001A857 /* ContentView.swift in Sources */,
+				94B6DC5A288ADCE900010026 /* ConversationList.swift in Sources */,
+				941337E928898D9C00AB3F2E /* ChatListView.swift in Sources */,
+				94B6DC53288AC0A600010026 /* MessageContentView.swift in Sources */,
+				941337F128898F6E00AB3F2E /* ConversationManager.swift in Sources */,
+				941337ED28898E9C00AB3F2E /* UserProfile.swift in Sources */,
 				942194E4288730740001A857 /* Ad.swift in Sources */,
 				941337E22889534E00AB3F2E /* AdDetails.swift in Sources */,
 				942194CF2887137E0001A857 /* BookrificApp.swift in Sources */,
+				94B6DC51288ABC0100010026 /* BookMapView.swift in Sources */,
+				94B6DC57288AC2AB00010026 /* ChatView.swift in Sources */,
+				94B6DC55288AC0FF00010026 /* MessageView.swift in Sources */,
+				941337EF28898EE100AB3F2E /* Message.swift in Sources */,
 				942194DD288716EF0001A857 /* BookMap.swift in Sources */,
+				94AC1CDC288AB5C20040715F /* Conversation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
