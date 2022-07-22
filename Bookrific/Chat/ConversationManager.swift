@@ -23,7 +23,8 @@ public class ConversationManager {
                 Message(id: 1, from: nil, message: "Ciao"),
                 Message(id: 2, from: nil, message: nil, attachments: [
                     UIImage(named: "book1")!,
-                    UIImage(named: "book2")!
+                    UIImage(named: "book2")!,
+                    UIImage(named: "book3")!
                 ]),
                 Message(id: 3, from: user, message: "Il secondo libro sembra interessante")
             ]

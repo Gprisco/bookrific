@@ -21,8 +21,7 @@ struct MessageView: View {
                 Spacer()
             }
             
-            MessageContentView(messageContent: message.message ?? "",
-                               isCurrentUser: false)
+            MessageContentView(message: message)
         }
     }
 }
