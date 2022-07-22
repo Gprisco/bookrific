@@ -11,8 +11,8 @@ struct ChatListView: View {
     @ObservedObject var conversations = ConversationManager.getConversations()
     
     var body: some View {
-        List(conversations.conversations) { chat in
-            NavigationLink(destination: ChatView(conversation: chat)) {
+        List($conversations.conversations) { $chat in
+            NavigationLink(destination: ChatView(conversation: $chat)) {
                 HStack {
                     Image(systemName: "person.fill")
                         .resizable()

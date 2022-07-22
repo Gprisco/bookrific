@@ -7,18 +7,12 @@
 
 import Foundation
 
-public class Conversation: Identifiable, Equatable, ObservableObject {
+public struct Conversation: Identifiable, Equatable {
     public static func == (lhs: Conversation, rhs: Conversation) -> Bool {
         return lhs.id == rhs.id
     }
     
     public var id: Int
-    @Published public var recipient: UserProfile
-    @Published public var messages: [Message]
-    
-    public init(id: Int, recipient: UserProfile, messages: [Message]) {
-        self.id = id
-        self.recipient = recipient
-        self.messages = messages
-    }
+    public var recipient: UserProfile
+    public var messages: [Message]
 }

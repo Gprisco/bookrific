@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ChatView: View {
     @State var typingMessage: String = ""
-    @ObservedObject var conversation: Conversation
+    @Binding var conversation: Conversation
+    
+    private enum Field: Int, Hashable {
+        case texting
+    }
+    @FocusState private var focusedField: Field?
     
     var body: some View {
         VStack {
@@ -25,15 +30,23 @@ struct ChatView: View {
                 Image(systemName: "paperclip.circle")
                 
                 TextField("Messaggio...", text: $typingMessage)
+                    .focused($focusedField, equals: .texting)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(minHeight: CGFloat(30))
                 
                 Button(action: {
+                    let msg = typingMessage.trimmingCharacters(in: .whitespaces)
+                    if msg.count == 0 {
+                        focusedField = .texting
+                        return
+                    }
+                    
                     let lastId = conversation.messages.last?.id ?? 0
 
-                    conversation.messages.append(Message(id: lastId + 1, from: nil, message: typingMessage, attachments: nil))
+                    conversation.messages.append(Message(id: lastId + 1, from: nil, message: msg, attachments: nil))
                     
                     typingMessage = ""
+                    focusedField = nil
                 }) {
                     Text("Invia")
                 }
