@@ -24,7 +24,8 @@ public class ConversationManager {
                 Message(id: 2, from: nil, message: nil, attachments: [
                     UIImage(named: "book1")!,
                     UIImage(named: "book2")!
-                ])
+                ]),
+                Message(id: 3, from: user, message: "Il secondo libro sembra interessante")
             ]
             
             conversations.append(Conversation(id: user.id, recipient: user, messages: messages))

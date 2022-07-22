@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MessageView: View {
-    @Binding var message: Message
+    var message: Message
     
     var body: some View {
         HStack(alignment: .bottom, spacing: 15) {
@@ -29,6 +29,6 @@ struct MessageView: View {
 
 struct MessageView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageView(message: Binding(get: {Message(id: 1, from: nil, message: "Hello!", attachments: nil)}, set: { _ in }))
+        MessageView(message: Message(id: 1, from: nil, message: "Hello!", attachments: nil))
     }
 }

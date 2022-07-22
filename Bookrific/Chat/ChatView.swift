@@ -14,8 +14,9 @@ struct ChatView: View {
     var body: some View {
         VStack {
             List {
-                ForEach($conversation.messages, id: \.self) { $msg in
-                    MessageView(message: $msg)
+                ForEach(conversation.messages, id: \.self) { msg in
+                    MessageView(message: msg)
+                        .listRowSeparator(.hidden)
                 }
             }
             .listStyle(.plain)
@@ -29,8 +30,9 @@ struct ChatView: View {
                 
                 Button(action: {
                     let lastId = conversation.messages.last?.id ?? 0
-                    print(lastId)
+
                     conversation.messages.append(Message(id: lastId + 1, from: nil, message: typingMessage, attachments: nil))
+                    
                     typingMessage = ""
                 }) {
                     Text("Invia")

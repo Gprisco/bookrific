@@ -14,9 +14,11 @@ struct ChatListView: View {
         List(conversations.conversations) { chat in
             NavigationLink(destination: ChatView(conversation: chat)) {
                 HStack {
-                    Image(systemName: "person.circle")
-                        .frame(width: 50, height: 50, alignment: .center)
-                    
+                    Image(systemName: "person.fill")
+                        .resizable()
+                        .frame(width: 40, height: 40, alignment: .center)
+                        .cornerRadius(20)
+
                     VStack(alignment: .leading) {
                         Text("\(chat.recipient.name) \(chat.recipient.surname)")
                             .bold()
