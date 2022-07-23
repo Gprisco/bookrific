@@ -38,7 +38,7 @@ class AdManager {
                 break;
             }
             
-            ads.append(contentsOf: [Ad(lat: region.center.latitude + Double(latDelta), long: region.center.longitude + Double(longDelta), author: "Ray Wenderlich", title: "Real-World iOS by Tutorials", description: "Very nice book", user: DB.users[i%DB.users.count])])
+            ads.append(contentsOf: [Ad(lat: region.center.latitude + Double(latDelta), long: region.center.longitude + Double(longDelta), author: "Ray Wenderlich", title: "Se i gatti scomparissero dal mondo", description: "Libro meraviglioso, commovente", user: DB.users[i % DB.users.count], photos: [UIImage(named: "book1")!, UIImage(named: "book1.1")!, UIImage(named: "book1.2")!])])
         }
         
         return ads

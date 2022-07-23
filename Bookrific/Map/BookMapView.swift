@@ -9,18 +9,31 @@ import SwiftUI
 
 struct BookMapView: View {
     @Binding var selectedPage: Int
+    @State var searchText: String = ""
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
             BookMap()
             
-            Button(action:  { withAnimation { selectedPage = PAGES.CHAT.rawValue } }) {
-                Image(systemName: "message")
-                    .frame(width: 45, height: 45, alignment: .center)
-                    .background(.white)
-                    .clipShape(Circle())
+            HStack(alignment: .center) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 25)
+                        .padding(8)
+                        .frame(maxHeight: 60, alignment: .center)
+                        .foregroundColor(.white)
+                    
+                    TextField("Cerca...", text: $searchText)
+                        .padding(25)
+                }
+                
+                Button(action:  { withAnimation { selectedPage = PAGES.CHAT.rawValue } }) {
+                    Image(systemName: "message")
+                        .frame(width: 45, height: 45, alignment: .center)
+                        .background(.white)
+                        .clipShape(Circle())
+                }
+                .padding(15)
             }
-            .padding(EdgeInsets(top: 15, leading: 0, bottom: 0, trailing: 15))
         }
     }
 }

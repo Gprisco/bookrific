@@ -19,7 +19,7 @@ struct Ad: Identifiable {
     
     let photos: [UIImage]
     
-    init(id: UUID = UUID(), lat: Double, long: Double, author: String, title: String, description: String, user: UserProfile) {
+    init(id: UUID = UUID(), lat: Double, long: Double, author: String, title: String, description: String, user: UserProfile, photos: [UIImage]) {
         self.id = id
         
         self.location = CLLocationCoordinate2D(
@@ -31,6 +31,6 @@ struct Ad: Identifiable {
         
         self.user = user
         
-        self.photos = [UIImage]()
+        self.photos = photos
     }
 }

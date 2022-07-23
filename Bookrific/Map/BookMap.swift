@@ -16,21 +16,23 @@ struct BookMap: View {
         }
     }
     @StateObject private var locationManager = LocationManager()
-    
+        
     var body: some View {
         VStack {
-            Map(coordinateRegion: $locationManager.region, showsUserLocation: true, userTrackingMode: .none, annotationItems: locationManager.ads) { ad in
-                MapAnnotation(coordinate: ad.location) {
-                    Image(systemName: "book.circle")
-                        .resizable()
-                        .foregroundColor(.accentColor)
-                        .frame(width: 30, height: 30)
-                        .background(.white)
-                        .clipShape(Circle())
-                        .onTapGesture {
-                            print("Tapped \(ad.id)")
-                            selectedAd = ad
-                        }
+            ZStack(alignment: .top) {
+                Map(coordinateRegion: $locationManager.region, showsUserLocation: true, userTrackingMode: .none, annotationItems: locationManager.ads) { ad in
+                    MapAnnotation(coordinate: ad.location) {
+                        Image(systemName: "book.circle")
+                            .resizable()
+                            .foregroundColor(.accentColor)
+                            .frame(width: 30, height: 30)
+                            .background(.white)
+                            .clipShape(Circle())
+                            .onTapGesture {
+                                print("Tapped \(ad.id)")
+                                selectedAd = ad
+                            }
+                    }
                 }
             }
         }
