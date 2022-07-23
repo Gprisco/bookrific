@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ChatListView: View {
-    @ObservedObject var conversations = ConversationManager.shared.getConversations()
+    @ObservedObject var conversationManager = ConversationManager.shared
     
     var body: some View {
-        List($conversations.conversations) { $chat in
+        List($conversationManager.conversations) { $chat in
             NavigationLink(destination: ChatView(conversation: $chat)) {
                 HStack {
                     Image(systemName: "person.fill")

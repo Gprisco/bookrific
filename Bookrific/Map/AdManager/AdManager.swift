@@ -38,7 +38,7 @@ class AdManager {
                 break;
             }
             
-            ads.append(contentsOf: [Ad(lat: region.center.latitude + Double(latDelta), long: region.center.longitude + Double(longDelta), author: "Ray Wenderlich", title: "Se i gatti scomparissero dal mondo", description: "Libro meraviglioso, commovente", user: DB.users[i % DB.users.count], photos: [UIImage(named: "book1")!, UIImage(named: "book1.1")!, UIImage(named: "book1.2")!])])
+            ads.append(contentsOf: [Ad(lat: region.center.latitude + Double(latDelta), long: region.center.longitude + Double(longDelta), author: "Kawamura Genki", title: "Se i gatti scomparissero dal mondo", description: "Libro meraviglioso, commovente", user: DB.users[i % DB.users.count], photos: [UIImage(named: "book1")!, UIImage(named: "book1.1")!, UIImage(named: "book1.2")!])])
         }
         
         return ads

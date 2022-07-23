@@ -10,6 +10,7 @@ import MapKit
 
 struct AdDetails: View {
     @Binding var ad: Ad?
+    @State var isPresentedProposal: Bool = false
     
     @State var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 43.0, longitude: 11.0), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
     
@@ -58,7 +59,7 @@ struct AdDetails: View {
                     .padding(EdgeInsets(top: 30, leading: 0, bottom: 0, trailing: 0))
                 
                 Button(action: {
-                    print("Scambio")
+                    isPresentedProposal.toggle()
                 }) {
                     Text("Proponi Scambio")
                         .padding(10)
@@ -69,6 +70,9 @@ struct AdDetails: View {
             .navigationTitle("Dettagli")
             .navigationBarTitleDisplayMode(.inline)
             .padding(.horizontal, 20)
+        }
+        .sheet(isPresented: $isPresentedProposal) {
+            SwitchProposal(ad: ad!, isSheetPresented: $isPresentedProposal)
         }
     }
 }

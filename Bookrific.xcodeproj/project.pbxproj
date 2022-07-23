@@ -21,13 +21,14 @@
 		942194E1288729C40001A857 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942194E0288729C40001A857 /* LocationManager.swift */; };
 		942194E4288730740001A857 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942194E3288730740001A857 /* Ad.swift */; };
 		942194E6288731630001A857 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942194E5288731630001A857 /* AdManager.swift */; };
+		94A2E184288BF6D400D93379 /* SwitchProposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A2E183288BF6D400D93379 /* SwitchProposal.swift */; };
+		94A2E188288BF74000D93379 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A2E187288BF74000D93379 /* Book.swift */; };
 		94AC1CDC288AB5C20040715F /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC1CDB288AB5C20040715F /* Conversation.swift */; };
 		94B5E8C2288B0B8700827F32 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B5E8C1288B0B8700827F32 /* DB.swift */; };
 		94B6DC51288ABC0100010026 /* BookMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6DC50288ABC0100010026 /* BookMapView.swift */; };
 		94B6DC53288AC0A600010026 /* MessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6DC52288AC0A600010026 /* MessageContentView.swift */; };
 		94B6DC55288AC0FF00010026 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6DC54288AC0FF00010026 /* MessageView.swift */; };
 		94B6DC57288AC2AB00010026 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6DC56288AC2AB00010026 /* ChatView.swift */; };
-		94B6DC5A288ADCE900010026 /* ConversationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6DC59288ADCE900010026 /* ConversationList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,13 +47,14 @@
 		942194E0288729C40001A857 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		942194E3288730740001A857 /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
 		942194E5288731630001A857 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		94A2E183288BF6D400D93379 /* SwitchProposal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchProposal.swift; sourceTree = "<group>"; };
+		94A2E187288BF74000D93379 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		94AC1CDB288AB5C20040715F /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		94B5E8C1288B0B8700827F32 /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
 		94B6DC50288ABC0100010026 /* BookMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMapView.swift; sourceTree = "<group>"; };
 		94B6DC52288AC0A600010026 /* MessageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageContentView.swift; sourceTree = "<group>"; };
 		94B6DC54288AC0FF00010026 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		94B6DC56288AC2AB00010026 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		94B6DC59288ADCE900010026 /* ConversationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				942194DC288716EF0001A857 /* BookMap.swift */,
 				941337E12889534E00AB3F2E /* AdDetails.swift */,
 				94B6DC50288ABC0100010026 /* BookMapView.swift */,
+				94A2E183288BF6D400D93379 /* SwitchProposal.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -89,7 +92,6 @@
 		941337E628898D7A00AB3F2E /* AdManager */ = {
 			isa = PBXGroup;
 			children = (
-				942194E3288730740001A857 /* Ad.swift */,
 				942194E5288731630001A857 /* AdManager.swift */,
 			);
 			path = AdManager;
@@ -98,7 +100,6 @@
 		941337E728898D9000AB3F2E /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				94B6DC58288ADBA200010026 /* Models */,
 				941337E828898D9C00AB3F2E /* ChatListView.swift */,
 				941337F028898F6E00AB3F2E /* ConversationManager.swift */,
 				94B6DC52288AC0A600010026 /* MessageContentView.swift */,
@@ -127,10 +128,11 @@
 		942194CD2887137E0001A857 /* Bookrific */ = {
 			isa = PBXGroup;
 			children = (
+				94A2E186288BF71A00D93379 /* Models */,
 				941337E728898D9000AB3F2E /* Chat */,
 				942194E7288855250001A857 /* Extensions */,
 				942194CE2887137E0001A857 /* BookrificApp.swift */,
-				94B5E8C1288B0B8700827F32 /* DB.swift */,
+				94A2E185288BF70100D93379 /* Database */,
 				942194D02887137E0001A857 /* ContentView.swift */,
 				941337E32889757800AB3F2E /* Map */,
 				942194D2288713810001A857 /* Assets.xcassets */,
@@ -155,13 +157,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		94B6DC58288ADBA200010026 /* Models */ = {
+		94A2E185288BF70100D93379 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				94B5E8C1288B0B8700827F32 /* DB.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		94A2E186288BF71A00D93379 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				941337EC28898E9C00AB3F2E /* UserProfile.swift */,
 				941337EE28898EE100AB3F2E /* Message.swift */,
 				94AC1CDB288AB5C20040715F /* Conversation.swift */,
-				94B6DC59288ADCE900010026 /* ConversationList.swift */,
+				942194E3288730740001A857 /* Ad.swift */,
+				94A2E187288BF74000D93379 /* Book.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -238,9 +249,9 @@
 			files = (
 				941337DE288855AB00AB3F2E /* MKCoordinateRegion.swift in Sources */,
 				942194E6288731630001A857 /* AdManager.swift in Sources */,
+				94A2E188288BF74000D93379 /* Book.swift in Sources */,
 				942194E1288729C40001A857 /* LocationManager.swift in Sources */,
 				942194D12887137E0001A857 /* ContentView.swift in Sources */,
-				94B6DC5A288ADCE900010026 /* ConversationList.swift in Sources */,
 				941337E928898D9C00AB3F2E /* ChatListView.swift in Sources */,
 				94B6DC53288AC0A600010026 /* MessageContentView.swift in Sources */,
 				941337F128898F6E00AB3F2E /* ConversationManager.swift in Sources */,
@@ -249,6 +260,7 @@
 				941337E22889534E00AB3F2E /* AdDetails.swift in Sources */,
 				942194CF2887137E0001A857 /* BookrificApp.swift in Sources */,
 				94B6DC51288ABC0100010026 /* BookMapView.swift in Sources */,
+				94A2E184288BF6D400D93379 /* SwitchProposal.swift in Sources */,
 				94B6DC57288AC2AB00010026 /* ChatView.swift in Sources */,
 				94B6DC55288AC0FF00010026 /* MessageView.swift in Sources */,
 				941337EF28898EE100AB3F2E /* Message.swift in Sources */,

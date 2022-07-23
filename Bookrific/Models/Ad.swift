@@ -7,8 +7,8 @@
 
 import MapKit
 
-struct Ad: Identifiable {
-    let id: UUID
+public struct Ad: Identifiable {
+    public let id: UUID
     
     let user: UserProfile
     
