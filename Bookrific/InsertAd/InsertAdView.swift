@@ -97,6 +97,21 @@ struct InsertAdView: View {
                     }
                 }
                 .padding(10)
+                
+                Button(action: {
+                    bookTitle = ""
+                    bookAuthor = ""
+                    adDescription = ""
+                    
+                    coordinates = CLLocationCoordinate2D(latitude: 43.0, longitude: 11.0)
+                    inputImages = [UIImage]()
+                }) {
+                    Text("Inserisci")
+                        .padding(10)
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                }
+                .buttonStyle(.borderedProminent)
+                .padding([.leading, .trailing], 20)
             }
             .navigationTitle("Nuova Inserzione")
             .sheet(isPresented: $showSheet) {
