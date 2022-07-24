@@ -23,7 +23,7 @@ struct InsertAdView: View {
     private var imagesLimit = 5
     
     private var locationManager = LocationManager()
-        
+    
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: true) {
@@ -87,7 +87,7 @@ struct InsertAdView: View {
                                     .scaledToFill()
                                     .frame(minWidth: 100, maxWidth: 200, minHeight: 100, maxHeight: 200)
                                     .aspectRatio(1, contentMode: .fill)
-
+                                
                                 Image(systemName: "plus.circle.fill")
                                     .resizable()
                                     .scaledToFill()
@@ -117,9 +117,9 @@ struct InsertAdView: View {
             .sheet(isPresented: $showSheet) {
                 LocationPicker(instructions: "Fai tap in un punto per selezionare la posizione", coordinates: $coordinates)
             }
-        }
-        .sheet(isPresented: $showingImagePicker) {
-            ImagePicker(images: $inputImages, limit: imagesLimit - inputImages.count)
+            .sheet(isPresented: $showingImagePicker) {
+                ImagePicker(images: $inputImages, limit: imagesLimit - inputImages.count)
+            }
         }
     }
 }

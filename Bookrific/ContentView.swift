@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AuthenticationServices
 
 public enum PAGES: Int {
     case MAP = 0
@@ -16,8 +17,8 @@ struct ContentView: View {
     @State private var selectedPage = 0
     
     var body: some View {
-        NavigationView {
-            TabView {
+        TabView {
+            NavigationView {
                 TabView(selection: $selectedPage) {
                     BookMapView(selectedPage: $selectedPage)
                         .navigationTitle("Scopri")
@@ -29,20 +30,21 @@ struct ContentView: View {
                         .tag(1)
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-                .tabItem {
-                    Label("Scopri", systemImage: "map")
-                }
-                
-                InsertAdView()
-                    .tabItem {
-                        Label("Inserisci", systemImage: "plus.circle")
-                    }
-                
-                Text("Profilo!")
-                    .tabItem {
-                        Label("Profilo", systemImage: "person")
-                    }
             }
+            .tabItem {
+                Label("Scopri", systemImage: "map")
+            }
+            
+            InsertAdView()
+                .navigationTitle("Inserisci")
+                .tabItem {
+                    Label("Inserisci", systemImage: "plus.circle")
+                }
+            
+            ProfileView()
+                .tabItem {
+                    Label("Profilo", systemImage: "person")
+                }
         }
     }
 }

@@ -40,6 +40,8 @@ struct ChatListView: View {
 
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
-        ChatListView()
+        NavigationView {
+            ChatListView()
+        }
     }
 }

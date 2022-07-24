@@ -35,11 +35,15 @@ struct BookMapView: View {
                 .padding(15)
             }
         }
+        .navigationTitle("Scopri")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct BookMapView_Previews: PreviewProvider {
     static var previews: some View {
-        BookMapView(selectedPage: Binding(get: { 1 }, set: { _ in }))
+        NavigationView {
+            BookMapView(selectedPage: Binding(get: { 1 }, set: { _ in }))
+        }
     }
 }
