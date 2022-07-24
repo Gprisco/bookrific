@@ -33,7 +33,7 @@ struct ContentView: View {
                     Label("Scopri", systemImage: "map")
                 }
                 
-                Text("Inserisci Inserzione!")
+                InsertAdView()
                     .tabItem {
                         Label("Inserisci", systemImage: "plus.circle")
                     }

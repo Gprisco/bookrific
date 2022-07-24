@@ -29,6 +29,9 @@
 		94B6DC53288AC0A600010026 /* MessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6DC52288AC0A600010026 /* MessageContentView.swift */; };
 		94B6DC55288AC0FF00010026 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6DC54288AC0FF00010026 /* MessageView.swift */; };
 		94B6DC57288AC2AB00010026 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6DC56288AC2AB00010026 /* ChatView.swift */; };
+		94F310AA288C4DCA0082FECE /* InsertAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F310A9288C4DCA0082FECE /* InsertAdView.swift */; };
+		94F310AD288C56E60082FECE /* LocationPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 94F310AC288C56E60082FECE /* LocationPicker */; };
+		94F310AF288C71B40082FECE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F310AE288C71B40082FECE /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,8 @@
 		94B6DC52288AC0A600010026 /* MessageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageContentView.swift; sourceTree = "<group>"; };
 		94B6DC54288AC0FF00010026 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		94B6DC56288AC2AB00010026 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		94F310A9288C4DCA0082FECE /* InsertAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAdView.swift; sourceTree = "<group>"; };
+		94F310AE288C71B40082FECE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F310AD288C56E60082FECE /* LocationPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +134,7 @@
 		942194CD2887137E0001A857 /* Bookrific */ = {
 			isa = PBXGroup;
 			children = (
+				94F310A8288C4DBC0082FECE /* InsertAd */,
 				94A2E186288BF71A00D93379 /* Models */,
 				941337E728898D9000AB3F2E /* Chat */,
 				942194E7288855250001A857 /* Extensions */,
@@ -177,6 +184,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		94F310A8288C4DBC0082FECE /* InsertAd */ = {
+			isa = PBXGroup;
+			children = (
+				94F310A9288C4DCA0082FECE /* InsertAdView.swift */,
+				94F310AE288C71B40082FECE /* ImagePicker.swift */,
+			);
+			path = InsertAd;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,6 +209,9 @@
 			dependencies = (
 			);
 			name = Bookrific;
+			packageProductDependencies = (
+				94F310AC288C56E60082FECE /* LocationPicker */,
+			);
 			productName = Bookrific;
 			productReference = 942194CB2887137E0001A857 /* Bookrific.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +240,9 @@
 				Base,
 			);
 			mainGroup = 942194C22887137E0001A857;
+			packageReferences = (
+				94F310AB288C56E60082FECE /* XCRemoteSwiftPackageReference "LocationPickerForSwiftUI" */,
+			);
 			productRefGroup = 942194CC2887137E0001A857 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,9 +276,11 @@
 				942194D12887137E0001A857 /* ContentView.swift in Sources */,
 				941337E928898D9C00AB3F2E /* ChatListView.swift in Sources */,
 				94B6DC53288AC0A600010026 /* MessageContentView.swift in Sources */,
+				94F310AF288C71B40082FECE /* ImagePicker.swift in Sources */,
 				941337F128898F6E00AB3F2E /* ConversationManager.swift in Sources */,
 				941337ED28898E9C00AB3F2E /* UserProfile.swift in Sources */,
 				942194E4288730740001A857 /* Ad.swift in Sources */,
+				94F310AA288C4DCA0082FECE /* InsertAdView.swift in Sources */,
 				941337E22889534E00AB3F2E /* AdDetails.swift in Sources */,
 				942194CF2887137E0001A857 /* BookrificApp.swift in Sources */,
 				94B6DC51288ABC0100010026 /* BookMapView.swift in Sources */,
@@ -399,7 +423,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bookrific/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) camera use";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Consentire l'accesso alla posizione?";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) photo use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -431,7 +457,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bookrific/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) camera use";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Consentire l'accesso alla posizione?";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) photo use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -473,6 +501,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		94F310AB288C56E60082FECE /* XCRemoteSwiftPackageReference "LocationPickerForSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alessiorubicini/LocationPickerForSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		94F310AC288C56E60082FECE /* LocationPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94F310AB288C56E60082FECE /* XCRemoteSwiftPackageReference "LocationPickerForSwiftUI" */;
+			productName = LocationPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 942194C32887137E0001A857 /* Project object */;
 }
